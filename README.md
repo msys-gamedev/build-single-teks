@@ -6,3 +6,6 @@ v1.0.0
 
 v1.0.1
 -Remove unity splash screen
+
+v1.0.2
+-Fixed multiplayer button
