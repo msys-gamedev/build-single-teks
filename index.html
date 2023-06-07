@@ -151,6 +151,7 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
+            this.unityInstance = unityInstance;
             loadingBar.style.display = "none";
             var data = urlParams.get('auth') + "&" + urlParams.get('uuid');
             unityInstance.SendMessage("[Bridge]", "SetData", data);
